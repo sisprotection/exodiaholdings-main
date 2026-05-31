@@ -1,0 +1,9 @@
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'condo';
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'vehicle';
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'website';
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'domain';
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'business';
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'equipment';
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'intellectual_property';
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'financial_account';
+ALTER TYPE property_type ADD VALUE IF NOT EXISTS 'collectible';
