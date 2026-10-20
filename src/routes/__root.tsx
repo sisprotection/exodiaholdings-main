@@ -9,7 +9,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
-import { supabase } from "@/integrations/supabase/client";
+import { hasSupabaseConfig, supabase } from "@/integrations/supabase/client";
 
 import appCss from "../styles.css?url";
 
@@ -94,6 +94,8 @@ function AuthSync() {
   const router = useRouter();
   const qc = useQueryClient();
   useEffect(() => {
+    if (!hasSupabaseConfig) return;
+
     const { data: { subscription } } = supabase.auth.onAuthStateChange(() => {
       router.invalidate();
       qc.invalidateQueries();
