@@ -19,7 +19,7 @@ const holdings = [
   { name: "Northstar Acreage", location: "Bastrop County, TX", className: "Land", status: "Financing", remaining: "$186,400", progress: 61 },
 ];
 
-function DemoDashboard() {
+export function DemoDashboard() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border/60 bg-background/90">
